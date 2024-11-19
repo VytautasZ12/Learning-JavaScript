@@ -38,3 +38,11 @@ desserts2.style.backgroundColor = "orange";
 //by LIST ITEM:
 let vegetables1 = document.querySelector("li");
 vegetables1.style.backgroundColor = "green";
+// will select element with for tag. But will select only first element.
+let elements3 = document.querySelector("[for]");
+elements3.style.backgroundColor = "lightgreen";
+// Will sellect each list item.
+let elements4 = document.querySelectorAll("li");
+elements4.forEach((elements4) => {
+  elements4.style.backgroundColor = "lightgreen";
+});
