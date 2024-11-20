@@ -1,0 +1,125 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background: linear-gradient(to bottom, #ffdd99, #ffbb88);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+.game-container {
+  margin: 100px auto;
+  padding: 100px;
+  max-width: 500px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+h1 {
+  font-size: 36px;
+  color: #ff5500;
+  text-shadow: 2px 2px #ffcc99;
+}
+h2 {
+  color: #ff6600;
+}
+.question {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff6600;
+  margin: 20px 0;
+}
+input {
+  font-size: 20px;
+  padding: 10px;
+  width: 150px;
+  border: 2px solid #ff8800;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+button {
+  font-size: 18px;
+  color: #fff;
+  background-color: #ff6600;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+button:hover {
+  background-color: #ff5500;
+  transform: scale(1.1);
+}
+#timer {
+  font-size: 24px;
+  color: #ff4444;
+}
+.result {
+  font-size: 20px;
+  color: #007700;
+}
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(circle, #ff6600, #ffcc00);
+  border-radius: 50%;
+  animation: fall 2s infinite;
+}
+@keyframes fall {
+  from {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(500px) rotate(360deg);
+    opacity: 0;
+  }
+}
+.feedback {
+  font-size: 20px;
+  margin: 10px 0;
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+.feedback.correct {
+  color: #00cc00;
+  transform: scale(1.2);
+}
+.feedback.wrong {
+  color: #cc0000;
+  transform: scale(0.8);
+}
+.history {
+  margin-top: 20px;
+  text-align: left;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 150px;
+  overflow-y: auto;
+}
+.history li {
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 4px;
+  background: #ffeeba;
+}
+.history li.correct {
+  background: #d4edda;
+  color: #155724;
+}
+.history li.wrong {
+  background: #f8d7da;
+  color: #721c24;
+}
+.history li.missed {
+  background: #cce5ff;
+  color: #004085;
+}
