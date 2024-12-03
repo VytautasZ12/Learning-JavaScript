@@ -8,8 +8,8 @@ let timeLeft = 10;
 
 function generateQuestions() {
   questions = [];
-  for (let i = 0; i < 50; i++) {
-    const num1 = Math.floor(Math.random() * 4) + 2; // Skaičiai nuo 2 iki 5
+  for (let i = 0; i < 70; i++) {
+    const num1 = Math.floor(Math.random() * 9) + 2; // Skaičiai nuo 2 iki 10
     const num2 = Math.floor(Math.random() * 9) + 2; // Skaičiai nuo 2 iki 10
     questions.push({ num1, num2, correct: num1 * num2 });
   }
